@@ -19,22 +19,20 @@
 #Sample Feature Definition Template
 @Regression
 Feature: Automating the Multiple NBA Test Cases
- 
+  
+  Background:
+     Given User is on NBA Warrior Home Page
 
   @RegressionTest
   Scenario Outline: Get the details of mens jackets and put into Excel
-    Given User is on NBA Warrior Home Page
-    And some other precondition
-    When User navigates to SHOP "<MainCategory>" section
-    And further user navigates to "<SubCategory>" section
-    And yet another action
+    When User navigates to SHOP "<MainCategory>" section further user navigates to "<SubCategory>" section
     Then user has fetched the info like jacket title,jacket price and sellers headline
-    And Store the info in excel
+    Then Store the info in excel
      
       Examples: 
       | MainCategory  | SubCategory    | status  |
       | Mens          |     Jacket     | success |
-      | Mens          |     Jersey     | Fail    |
+    
     
 
   @tag2

@@ -108,9 +108,8 @@ public class NewAndMediaPOM {
 	/***
 	 * This method refers the fetch umber of video counts present screen
 	 */
-	public void countVideoLnks() {
+	public void  countVideoLnks() {
 		int getLengthVideo = videoLinkCount.size();
 		System.out.println("the count of video is : " + getLengthVideo);
-
 	}
 }

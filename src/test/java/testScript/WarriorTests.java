@@ -11,8 +11,8 @@ import org.openqa.selenium.WebDriver;
 import POM.MenPagePOM;
 import POM.TeamPOM;
 import POM.WarriorsPOM;
-import Utility.SwitchWindow;
-import Utility.Xls_Reader;
+import utility.SwitchWindow;
+import utility.Xls_Reader;
 import veeveDemo.BaseTest;
 
 public class WarriorTests extends BaseTest {
