@@ -1,0 +1,18 @@
+
+
+{ 
+"testDetails":
+   [ 
+
+ 							{ 
+								"url":"https://www.nba.com/warriors",
+								"browser":"chrome"
+ 							},
+ 							{ 
+								"url":"https://www.nba.com/warriors",
+								"browser":"chrome"
+ 							}
+	]
+	}
+	
+   

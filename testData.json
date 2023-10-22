@@ -1,0 +1,21 @@
+{
+  "testDetails" : [ {
+    "testName" : "Shopjacket",
+    "testData" : [ {
+      "url" : "https://www.nba.com/warriors",
+      "browser" : "chrome"
+    }, {
+      "url" : "https://www.nba.com/warriors",
+      "browser" : "chrome"
+    } ]
+  }, {
+    "testName" : "2ndTest",
+    "testData" : [ {
+      "url" : "https://www.nba.com/warriors",
+      "browser" : "chrome"
+    }, {
+      "url" : "https://www.nba.com/warriors",
+      "browser" : "chrome"
+    } ]
+  } ]
+}
