@@ -76,6 +76,15 @@ public class NewAndMediaPOM {
 			WebElement videoCliplnk = driver
 					.findElement(By.xpath("(//ul[starts-with(@class,'ContentGrid_contentGridArticles')])[2]/li[" + temp
 							+ "]/div/div[2]/div[2]/div/div[3]/div/div/time/span"));
+			
+		/*
+		 * WebElement videoCliplnk = driver .findElement(By.xpath(
+		 * "(//ul[starts-with(@class,\"ContentGrid_contentGridArticles\")])[2]/li["+
+		 * temp+"]  and //div[starts-with(@class,\"TileArticle_tileArticleMetaWrapper\")]/div/div/time/span"
+		 * ));
+		 */
+			
+					
 			String videoLinkhrs = videoCliplnk.getText();
 			count = getOldSince(videoLinkhrs, "h", 14);
 			System.out.println(temp + "th index hrs are : " + videoLinkhrs);

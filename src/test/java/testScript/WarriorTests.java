@@ -7,6 +7,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.Test;
 
 import POM.MenPagePOM;
 import POM.TeamPOM;
@@ -22,19 +23,11 @@ public class WarriorTests extends BaseTest {
 	 * 
 	 * @throws IOException
 	 */
-	//public void fetchJacketsInfo() throws IOException {
-	public static void main(String args[]) throws IOException
-	{
-		WebDriver driver;
-		String jsonPath = System.getProperty("user.dir")+"//testData.json";
-		BaseTest test = new BaseTest();
+	
+	@Test
+	public void fetchJacketsInfo() throws IOException {
 		Xls_Reader utility = new Xls_Reader();
-		//ReadJson readJson = new ReadJson()
-				
-		//driver = test.init("https://www.nba.com/warriors","Chrome");
-		
-		driver = test.init("Firefox");
-
+	
 		WarriorsPOM obj = new WarriorsPOM(driver);
 		obj.acceptWarriorDialog();
 

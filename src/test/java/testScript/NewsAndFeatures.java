@@ -30,72 +30,81 @@ import io.cucumber.java.en.When;
 import veeveDemo.BaseTest;
 
 public class NewsAndFeatures extends BaseTest {
-	
-	//public static void main(String[] args) throws IOException {
-	ExtentReports extent=null;
-	ExtentTest extentTest=null;
-	WebDriver driver;
+
+	// public static void main(String[] args) throws IOException {
+	// ExtentReports extent=null;
+
+	// WebDriver driver;
 	WarriorsPOM obj2;
 	NewAndMediaPOM obj;
-	
-	@Before
-	public void start()
-	{
-		BaseTest test = new BaseTest();
-		driver=test.init("Chrome");
+
+	// @Before
+	@Test
+	public void start() {
+
 		Xls_Reader utility = new Xls_Reader();
-		//extentTest.log(Status.INFO,"login to browser");
-		extentTest = extent.createTest("Launch the browser and get count of video feeds which are posted since particular time period").assignAuthor("Rahil");
+	
+		ExtentTest extentTest = extent
+				.createTest(
+						"Launch the browser and get count of video feeds which are posted since particular time period")
+				.assignAuthor("Rahil");
+		// }
+
+		// @Given("User is on NBA Warrior Home Page")
+		// void navigateWarriorClosePopup() {
+		// driver=test.init("https://www.nba.com/warriors","Firefox");
+
+		extentTest.log(Status.INFO, "Killing 2 popups");
+		extentTest.log(Status.PASS, "Killing 2 popups");
+
+		obj2 = new WarriorsPOM(driver);
+		obj2.acceptWarriorDialog();
+		Assert.assertEquals(driver.getTitle(), "Home | Golden State Warriors");
+		// }
+
+		// @When("User navigates to SHOP {string} section further user navigates to
+		// {string} section")
+		// public void navigateToNewsMedia()
+		// {
+
+		extentTest.log(Status.INFO, "Navigating to News&Media Features");
+		extentTest.log(Status.PASS, "Clicked on News&Media from top menu using Actions class");
+
+		obj = new NewAndMediaPOM(driver);
+		obj.clickNewsFeatures(driver);
+		Assert.assertEquals(driver.getTitle(), "News & Media | NBA.com");
+		// }
+
+		// public void countAllVideoFeed() {
+		extentTest.log(Status.INFO, "Count the total number of Video feed links");
+		extentTest.log(Status.PASS, "COunted all videos in video feed successfully");
+		obj.countVideoLnks(); // }
+
+		//// @Then("user has fetched the info like jacket title,jacket price and sellers
+		//// headline")
+		// public void countVideoBasedOnTime()
+		// {
+
+		extentTest.log(Status.INFO, "Count the total number of Video feed links");
+		extentTest.log(Status.PASS, "COunted all videos in video feed successfully");
+
+		obj.countVideoLnks();
+
+		extentTest.log(Status.INFO, "Count the total number of video feed posted since particular/Requested time");
+		extentTest.log(Status.PASS,
+				"Successfully able to retreive the number of video according to requested time in config.properties");
+
+		obj.getTime();
+		
+	
+
+		// @Then("Store the info in excel")
+		// public void prepareReport()
+		// {
+		// extent.flush();
 	}
 
-	@Given("User is on NBA Warrior Home Page")
-	public void navigateWarriorClosePopup()	{
-		//driver=test.init("https://www.nba.com/warriors","Firefox");
-		extentTest.log(Status.INFO,"Killing 2 popups");
-		extentTest.log (Status.PASS,"Killing 2 popups");
-		 obj2 = new WarriorsPOM(driver); 
-		  obj2.acceptWarriorDialog();
-		  Assert.assertEquals(driver.getTitle(), "Home | Golden State Warriors");
-	}
-	
-	@When("User navigates to SHOP {string} section further user navigates to {string} section")
-	public void navigateToNewsMedia()
-	{
-		  extentTest.log(Status.INFO,"Navigating to News&Media Features");
-		  extentTest.log (Status.PASS,"Clicked on News&Media from top menu using Actions class");
-	      obj = new NewAndMediaPOM(driver); 
-		  obj.clickNewsFeatures(driver);
-		  Assert.assertEquals(driver.getTitle(), "News & Media | NBA.com");
-	}
-	
 	/*
-	 * public void countAllVideoFeed() {
-	 * extentTest.log(Status.INFO,"Count the total number of Video feed links");
-	 * extentTest.log(Status.PASS,"COunted all videos in video feed successfully");
-	 * obj.countVideoLnks(); }
-	 */	  
-	
-	@Then("user has fetched the info like jacket title,jacket price and sellers headline")
-	public void countVideoBasedOnTime()
-	{
-		extentTest.log(Status.INFO,"Count the total number of Video feed links");
-		  extentTest.log(Status.PASS,"COunted all videos in video feed successfully");
-		  obj.countVideoLnks();
-		  
-		  extentTest.log(Status.INFO,"Count the total number of video feed posted since particular/Requested time");
-		  extentTest.log(Status.PASS,"Successfully able to retreive the number of video according to requested time in config.properties");
-		  obj.getTime();
-	}
-	
-	@Then("Store the info in excel")
-	public void prepareReport()
-	{
-		 extent.flush();
-	}
-	
-	@After
-	public void closeBrowser()
-	{
-		driver.quit();
-	}
+	 * @After public void closeBrowser() { driver.quit(); }
+	 */
 }
