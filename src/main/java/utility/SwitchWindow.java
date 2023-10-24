@@ -9,6 +9,11 @@ import org.openqa.selenium.WebElement;
 
 public class SwitchWindow {
 	
+	/***
+	 * This method is responsible to switch to child window
+	 * @param driver pass driver reference
+	 * @param mainWindow pass main window reference
+	 */
 	public void switchChildWindow(WebDriver driver,String mainWindow)
 	{
 	Set<String> s1 = driver.getWindowHandles();
@@ -23,6 +28,11 @@ public class SwitchWindow {
     }    
 
 }
+	/***
+	 * This method is for closing the current window and switch to parent window
+	 * @param driver pass driver refrence
+	 * @param mainWindow pass mainwindow refrence
+	 */
 public void switchParent(WebDriver driver,String mainWindow)
 {
 driver.close();

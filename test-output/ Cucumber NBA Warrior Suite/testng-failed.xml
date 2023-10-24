@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [ Cucumber NBA Warrior Suite]">
+  <test thread-count="5" name="NBA Test(failed)">
+    <classes>
+      <class name="stepDefinition.NewsAndFeatures2">
+        <methods>
+          <include name="user_is_on_nba_warrior_home_page"/>
+        </methods>
+      </class> <!-- stepDefinition.NewsAndFeatures2 -->
+      <class name="stepDefinition.WarriorTests">
+        <methods>
+          <include name="initDriver"/>
+          <include name="fetchJacketsInfo"/>
+        </methods>
+      </class> <!-- stepDefinition.WarriorTests -->
+    </classes>
+  </test> <!-- NBA Test(failed) -->
+</suite> <!-- Failed suite [ Cucumber NBA Warrior Suite] -->

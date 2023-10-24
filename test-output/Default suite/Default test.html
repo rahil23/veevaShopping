@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 23 22:34:37 IST 2023</td>
+<td>Started on:</td><td>Tue Oct 24 20:05:40 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>75 seconds (75829 ms)</td>
+<tr><td>Total time:</td><td>7 seconds (7940 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,15 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testScript.NewsAndFeatures.start()'><b>start</b><br>Test class: testScript.NewsAndFeatures</td>
+<td title='tests.NewsAndFeatures2.user_is_on_nba_warrior_home_page()'><b>user_is_on_nba_warrior_home_page</b><br>Test class: tests.NewsAndFeatures2</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//ul[starts-with(@class,&apos;ContentGrid_contentGridArticles&apos;)])[2]/li[18]/div/div[2]/div[2]/div/div[3]/div/div/time/span
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0e8732a0-647e-4ccd-a3a7-8130c07fcb73, findElement {using=xpath, value=(//ul[starts-with(@class,&apos;ContentGrid_contentGridArticles&apos;)])[2]/li[18]/div/div[2]/div[2]/div/div[3]/div/div/time/span}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:debuggerAddress: 127.0.0.1:20090, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35324, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:20090/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0e8732a0-647e-4ccd-a3a7-8130c07fcb73
+Command: [cfe2886b-1783-476c-90ef-2ac744297cb6, findElement {using=xpath, value=(//ul[starts-with(@class,&apos;ContentGrid_contentGridArticles&apos;)])[2]/li[18]/div/div[2]/div[2]/div/div[3]/div/div/time/span}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:debuggerAddress: 127.0.0.1:40350, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20044, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:40350/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cfe2886b-1783-476c-90ef-2ac744297cb6
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -101,8 +101,8 @@ Session ID: 0e8732a0-647e-4ccd-a3a7-8130c07fcb73
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at POM.NewAndMediaPOM.getTime(NewAndMediaPOM.java:77)
-	at testScript.NewsAndFeatures.start(NewsAndFeatures.java:97)
+	at POM.NewAndMediaPage.getTime(NewAndMediaPage.java:82)
+	at tests.NewsAndFeatures2.user_is_on_nba_warrior_home_page(NewsAndFeatures2.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -131,15 +131,15 @@ Session ID: 0e8732a0-647e-4ccd-a3a7-8130c07fcb73
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1092382020", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1092382020'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//ul[starts-with(@class,&apos;ContentGrid_contentGridArticles&apos;)])[2]/li[18]/div/div[2]/div[2]/div/div[3]/div/div/time/span
+</pre></div><a href='#' onClick='toggleBox("stack-trace271341439", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace271341439'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: (//ul[starts-with(@class,&apos;ContentGrid_contentGridArticles&apos;)])[2]/li[18]/div/div[2]/div[2]/div/div[3]/div/div/time/span
 For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.8&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [0e8732a0-647e-4ccd-a3a7-8130c07fcb73, findElement {using=xpath, value=(//ul[starts-with(@class,&apos;ContentGrid_contentGridArticles&apos;)])[2]/li[18]/div/div[2]/div[2]/div/div[3]/div/div/time/span}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:debuggerAddress: 127.0.0.1:20090, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 35324, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:20090/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 0e8732a0-647e-4ccd-a3a7-8130c07fcb73
+Command: [cfe2886b-1783-476c-90ef-2ac744297cb6, findElement {using=xpath, value=(//ul[starts-with(@class,&apos;ContentGrid_contentGridArticles&apos;)])[2]/li[18]/div/div[2]/div[2]/div/div[3]/div/div/time/span}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 118.0.2, moz:accessibilityChecks: false, moz:buildID: 20231009140911, moz:debuggerAddress: 127.0.0.1:40350, moz:geckodriverVersion: 0.33.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 20044, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:40350/devtoo..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: cfe2886b-1783-476c-90ef-2ac744297cb6
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -156,8 +156,8 @@ Session ID: 0e8732a0-647e-4ccd-a3a7-8130c07fcb73
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
-	at POM.NewAndMediaPOM.getTime(NewAndMediaPOM.java:77)
-	at testScript.NewsAndFeatures.start(NewsAndFeatures.java:97)
+	at POM.NewAndMediaPage.getTime(NewAndMediaPage.java:82)
+	at tests.NewsAndFeatures2.user_is_on_nba_warrior_home_page(NewsAndFeatures2.java:78)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -187,8 +187,8 @@ Session ID: 0e8732a0-647e-4ccd-a3a7-8130c07fcb73
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>69</td>
-<td>testScript.NewsAndFeatures@2d901eb0</td></tr>
+<td>7</td>
+<td>tests.NewsAndFeatures2@52cb4f50</td></tr>
 </table><p>
 </body>
 </html>

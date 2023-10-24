@@ -1,7 +1,8 @@
-<suite name = " Cucumber NBA Warrior Suite" verbose ="1" parallel="classes" thread-count = "2">
+<suite name = " Cucumber NBA Warrior Suite" verbose ="1">
 	<test name = "NBA Test">
 		<classes>
-			<class name = "runner.TestRunner"/>
+			<class name = "stepDefinition.NewsAndFeatures2"/>
+			<class name = "stepDefinition.WarriorTests"/>
 		</classes>
 	</test>
 </suite>
